@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1>
+    {{ title }}
+</h1>
+
+<pre>
+    {{(person|async)|json}}
+</pre>
+
+<button (click)="fetchDataFromServer()">Fetch Data</button>
+
+<!-- <div>
+    <ul>
+        <li>{{person.id}}</li>
+        <li>{{person.firtname}}</li>
+        <li>{{person.lastname}}</li>
+    </ul>
+</div> -->
+
+<router-outlet></router-outlet>
